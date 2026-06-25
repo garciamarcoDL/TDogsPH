@@ -20,5 +20,8 @@
         "optimize-autoloader": true,
         "sort-packages": true
     },
-    "require": {}
+    "require": {
+        "phpmailer/phpmailer": "^7.1",
+        "vlucas/phpdotenv": "^5.6"
+    }
 }
