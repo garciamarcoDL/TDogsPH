@@ -1,0 +1,30 @@
+:root{
+
+/* CLIENT BRAND */
+
+--primary:#513229;
+--cream:#F4F1E2;
+--sky:#D8EBF9;
+--sand:#FCE6B7;
+--sage:#D7D4B1;
+
+/* UI */
+
+--secondary:var(--sand);
+--accent:var(--sky);
+
+--background:var(--cream);
+--surface:#FFFFFF;
+
+--text-primary:var(--primary);
+--text-secondary:#6E625D;
+
+--white:#FFFFFF;
+
+--shadow-sm:0 5px 15px rgba(0,0,0,.05);
+--shadow-md:0 12px 30px rgba(0,0,0,.08);
+--shadow-lg:0 25px 60px rgba(0,0,0,.12);
+
+--radius:24px;
+
+}

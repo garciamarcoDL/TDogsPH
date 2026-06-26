@@ -1,0 +1,73 @@
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #6C63FF,
+    #FF6B6B);
+
+}
+
+.hero-text{
+
+    color:white;
+
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1{
+
+    font-size:82px;
+
+    font-weight:800;
+
+    line-height:1;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin:35px 0;
+
+    max-width:520px;
+
+}
+
+.hero-image{
+
+    text-align:center;
+
+}
+
+.hero-dog{
+
+    max-width:600px;
+
+    width:100%;
+
+}

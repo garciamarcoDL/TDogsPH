@@ -1,0 +1,101 @@
+.spa-menu{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.spa-card{
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    height:100%;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.spa-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 35px 80px rgba(108,99,255,.18);
+
+}
+
+.spa-icon{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(135deg,#6C63FF,#FF6B6B);
+
+    color:#fff;
+
+    font-size:32px;
+
+    margin-bottom:30px;
+
+}
+
+.price{
+
+    margin:20px 0;
+
+    color:#6B7280;
+
+}
+
+.price strong{
+
+    display:block;
+
+    font-size:34px;
+
+    color:#1F2937;
+
+}
+
+.duration{
+
+    margin-bottom:20px;
+
+    color:#6C63FF;
+
+    font-weight:600;
+
+}
+
+.reserve-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    color:#6C63FF;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
