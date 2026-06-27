@@ -2,10 +2,20 @@
 
     <div class="container">
 
-        <a class="navbar-brand" href="#">
-            <span class="logo-icon">🐶</span>
-            <span class="logo-text">TDogsPH</span>
-        </a>
+<a class="navbar-brand" href="#home">
+
+    <img
+        src="assets/images/hero/dog.png"
+        class="nav-logo"
+        alt="TDogsPH Logo">
+
+    <span class="logo-text">
+
+        TDogsPH
+
+    </span>
+
+</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>

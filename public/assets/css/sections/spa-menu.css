@@ -1,42 +1,75 @@
+/* ==========================================
+   SPA MENU
+========================================== */
+
 .spa-menu{
 
     padding:120px 0;
 
-    background:#F8FAFC;
+    background:
+    linear-gradient(
+    180deg,
+    #FFFDF8 0%,
+    #FFF8EC 100%
+    );
+
+}
+
+.spa-menu h2{
+
+    color:var(--primary);
+
+    font-size:56px;
+
+    font-weight:800;
+
+    margin:20px 0;
+
+}
+
+.spa-menu .section-description{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
 
 }
 
 .spa-card{
 
-    background:#fff;
+    background:var(--surface);
 
-    border-radius:30px;
+    border-radius:32px;
 
-    padding:40px;
+    padding:42px 36px;
 
     height:100%;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.06);
+    box-shadow:var(--shadow-md);
 
-    transition:.35s;
+    transition:all .35s ease;
 
 }
 
 .spa-card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-10px);
 
-    box-shadow:0 35px 80px rgba(108,99,255,.18);
+    box-shadow:var(--shadow-lg);
 
 }
 
 .spa-icon{
 
-    width:80px;
+    width:82px;
 
-    height:80px;
+    height:82px;
 
-    border-radius:20px;
+    border-radius:22px;
 
     display:flex;
 
@@ -44,58 +77,84 @@
 
     justify-content:center;
 
-    background:linear-gradient(135deg,#6C63FF,#FF6B6B);
+    background:var(--primary);
 
-    color:#fff;
+    color:var(--white);
 
-    font-size:32px;
+    font-size:34px;
 
     margin-bottom:30px;
 
 }
 
-.price{
+.spa-card h3{
 
-    margin:20px 0;
+    color:var(--primary);
 
-    color:#6B7280;
+    font-size:36px;
 
-}
+    font-weight:700;
 
-.price strong{
-
-    display:block;
-
-    font-size:34px;
-
-    color:#1F2937;
+    margin-bottom:18px;
 
 }
 
-.duration{
+.spa-price-label{
 
-    margin-bottom:20px;
+    color:var(--text-secondary);
 
-    color:#6C63FF;
+    font-size:17px;
+
+    margin-bottom:8px;
+
+}
+
+.spa-price{
+
+    color:var(--primary);
+
+    font-size:54px;
+
+    font-weight:800;
+
+    margin-bottom:18px;
+
+}
+
+.spa-duration{
+
+    color:var(--primary);
 
     font-weight:600;
 
+    margin-bottom:24px;
+
 }
 
-.reserve-btn{
+.spa-card p{
 
-    display:inline-flex;
+    color:var(--text-secondary);
 
-    align-items:center;
+    line-height:1.8;
 
-    gap:10px;
+    margin-bottom:30px;
 
-    margin-top:20px;
+}
 
-    color:#6C63FF;
+.spa-card a{
+
+    color:var(--primary);
 
     text-decoration:none;
 
     font-weight:700;
+
+    transition:.3s;
+
+}
+
+.spa-card a:hover{
+
+    letter-spacing:1px;
 
 }

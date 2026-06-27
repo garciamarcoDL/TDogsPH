@@ -4,7 +4,7 @@ $gallery = require __DIR__ . '/../../../app/Data/gallery.php';
 
 ?>
 
-<section class="gallery-section">
+<section id="gallery" class="gallery-section">
 
     <div class="container">
 

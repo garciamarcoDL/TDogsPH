@@ -8,17 +8,22 @@
 
     align-items:center;
 
+    overflow:hidden;
+
     background:
     linear-gradient(
-    135deg,
-    #6C63FF,
-    #FF6B6B);
+        135deg,
+        var(--primary) 0%,
+        #6B4539 30%,
+        var(--sage) 70%,
+        var(--cream) 100%
+    );
 
 }
 
 .hero-text{
 
-    color:white;
+    color:var(--white);
 
 }
 
@@ -26,15 +31,19 @@
 
     display:inline-block;
 
-    background:rgba(255,255,255,.15);
+    background:rgba(244,241,226,.18);
 
     backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
 
     padding:12px 20px;
 
     border-radius:999px;
 
     margin-bottom:30px;
+
+    color:var(--white);
 
 }
 
@@ -46,6 +55,8 @@
 
     line-height:1;
 
+    color:var(--white);
+
 }
 
 .hero p{
@@ -55,6 +66,8 @@
     margin:35px 0;
 
     max-width:520px;
+
+    color:rgba(255,255,255,.90);
 
 }
 
@@ -69,5 +82,52 @@
     max-width:600px;
 
     width:100%;
+
+    animation:heroFloat 6s ease-in-out infinite;
+
+    transform-origin:center;
+
+    will-change:transform;
+
+}
+
+@keyframes heroFloat{
+
+    0%{
+
+        transform:translateY(0px) rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:translateY(-10px) rotate(-2deg);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px) rotate(0deg);
+
+    }
+
+    75%{
+
+        transform:translateY(-10px) rotate(2deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0px) rotate(0deg);
+
+    }
+
+
+}
+
+.hero-dog:hover{
+
+    transform:translateY(-8px);
 
 }

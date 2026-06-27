@@ -2,11 +2,12 @@
 
     padding:120px 0;
 
-    background:#F8FAFC;
+    background:var(--cream);
 
 }
 
 .gallery-section h2{
+    color:var(--primary);
 
     font-size:52px;
 
@@ -22,7 +23,7 @@
 
     margin:auto;
 
-    color:#6B7280;
+    color:var(--text-secondary);
 
 }
 
@@ -99,9 +100,9 @@
 
     width:max-content;
 
-    background:#FFD93D;
+   background:var(--sand);
 
-    color:#1F2937;
+color:var(--primary);
 
     padding:8px 18px;
 

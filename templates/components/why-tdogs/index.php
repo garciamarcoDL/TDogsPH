@@ -1,4 +1,4 @@
-<section class="why-tdogs">
+<section id="why-tdogs" class="why-tdogs">
 
 <div class="container">
 

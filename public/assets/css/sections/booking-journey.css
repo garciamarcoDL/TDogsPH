@@ -1,0 +1,91 @@
+/* ==========================================
+   BOOKING JOURNEY
+========================================== */
+
+.booking-journey{
+
+    padding:120px 0;
+
+    background:var(--white);
+
+}
+
+.booking-journey h2{
+
+    color:var(--primary);
+
+    font-size:54px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+.journey-card{
+
+    background:var(--surface);
+
+    border-radius:30px;
+
+    padding:40px 30px;
+
+    height:100%;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-md);
+
+    transition:.35s;
+
+}
+
+.journey-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.journey-number{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--primary);
+
+    color:var(--cream);
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.journey-card h4{
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.journey-card p{
+
+    color:var(--text-secondary);
+
+    margin:0;
+
+}

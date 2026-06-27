@@ -1,0 +1,55 @@
+.testimonials-section{
+
+    padding:120px 0;
+
+    background:var(--background);
+
+}
+
+.testimonial-card{
+
+    background:var(--surface);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    height:100%;
+
+    box-shadow:var(--shadow-md);
+
+    transition:.35s;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.stars{
+
+    color:#F4B400;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.testimonial-card p{
+
+    margin-bottom:25px;
+
+}
+
+.testimonial-card h5{
+
+    margin:0;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}

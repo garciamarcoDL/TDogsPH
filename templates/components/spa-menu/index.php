@@ -4,7 +4,7 @@ $services = require __DIR__ . '/../../../app/Data/services.php';
 
 ?>
 
-<section class="spa-menu">
+<section id="spa-menu" class="spa-menu">
 
 <div class="container">
 

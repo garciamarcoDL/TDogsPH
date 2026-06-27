@@ -1,0 +1,65 @@
+/* ==========================================
+   CTA
+========================================== */
+
+.cta-section{
+
+    padding:120px 0;
+
+    background:var(--primary);
+
+}
+
+.cta-wrapper{
+
+    max-width:1000px;
+
+    margin:0 auto;
+
+}
+
+.cta-section .section-tag{
+
+    background:var(--sand);
+
+    color:var(--primary);
+
+}
+
+.cta-section h2{
+
+    color:var(--white);
+
+    font-size:56px;
+
+    font-weight:800;
+
+    margin:25px 0;
+
+}
+
+.cta-section .section-description{
+
+    color:rgba(255,255,255,.85);
+
+    max-width:700px;
+
+    margin:0 auto;
+
+}
+
+.cta-section .book-btn{
+
+    min-width:220px;
+
+}
+
+.cta-section .btn-primary-custom{
+
+    min-width:220px;
+
+    background:var(--white);
+
+    color:var(--primary);
+
+}

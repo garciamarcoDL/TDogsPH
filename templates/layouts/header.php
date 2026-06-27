@@ -51,14 +51,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <link rel="stylesheet" href="assets/css/pages/home.css">
 
 <!-- Sections -->
-
+<link rel="stylesheet" href="assets/css/sections/about.css">
 <link rel="stylesheet" href="assets/css/sections/why-tdogs.css">
 
 <link rel="stylesheet" href="assets/css/sections/spa-menu.css">
+<link rel="stylesheet" href="assets/css/sections/booking-journey.css">
 
 <link rel="stylesheet" href="assets/css/sections/gallery.css">
 
 <link rel="stylesheet" href="assets/css/sections/testimonials.css">
+<link rel="stylesheet" href="assets/css/sections/cta.css">
 
 <!-- Effects -->
 
