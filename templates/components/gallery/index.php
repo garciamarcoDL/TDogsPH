@@ -4,56 +4,85 @@ $gallery = require __DIR__ . '/../../../app/Data/gallery.php';
 
 ?>
 
-<section id="gallery" class="gallery-section">
+<section
+    id="gallery"
+    class="gallery-section">
 
     <div class="container">
 
         <div class="text-center mb-5">
 
             <span class="section-tag">
+
                 Happy Tails
+
             </span>
 
             <h2>
+
                 Every Grooming Tells A Story
+
             </h2>
 
             <p class="section-description">
-                Take a look at some of our happy furry clients after their
-                TDogs spa experience.
+
+                Every visit creates a new memory. From luxurious spa treatments and stylish makeovers to birthday celebrations and heartwarming moments, discover why pet families love TDogsPH.
+
             </p>
 
         </div>
 
-        <div class="row g-4">
+        <div class="gallery-grid">
 
             <?php foreach($gallery as $item): ?>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="gallery-card <?= htmlspecialchars($item['size']); ?>">
 
-                    <div class="gallery-card">
+                    <div class="gallery-image">
 
-                        <div class="gallery-image">
+                        <img
+                            src="<?= htmlspecialchars($item['image']); ?>"
+                            alt="<?= htmlspecialchars($item['title']); ?>">
 
-                            <img
-                                src="<?= htmlspecialchars($item['image']); ?>"
-                                alt="<?= htmlspecialchars($item['title']); ?>">
+                        <?php if($item['featured']): ?>
 
-                            <div class="gallery-overlay">
+                            <span class="featured-tag">
 
-                                <span class="gallery-category">
+                                Featured
 
-                                    <?= htmlspecialchars($item['category']); ?>
+                            </span>
 
-                                </span>
+                        <?php endif; ?>
 
-                                <h4>
+                        <?php if($item['instagram']): ?>
 
-                                    <?= htmlspecialchars($item['title']); ?>
+                            <span class="instagram-tag">
 
-                                </h4>
+                                <i class="fab fa-instagram"></i>
 
-                            </div>
+                            </span>
+
+                        <?php endif; ?>
+
+                        <div class="gallery-overlay">
+
+                            <span class="gallery-category">
+
+                                <?= htmlspecialchars($item['category']); ?>
+
+                            </span>
+
+                            <h4>
+
+                                <?= htmlspecialchars($item['title']); ?>
+
+                            </h4>
+
+                            <p>
+
+                                <?= htmlspecialchars($item['description']); ?>
+
+                            </p>
 
                         </div>
 
@@ -62,6 +91,18 @@ $gallery = require __DIR__ . '/../../../app/Data/gallery.php';
                 </div>
 
             <?php endforeach; ?>
+
+        </div>
+
+        <div class="gallery-footer text-center mt-5">
+
+            <a
+                href="#"
+                class="btn-primary-custom">
+
+                View Full Gallery
+
+            </a>
 
         </div>
 

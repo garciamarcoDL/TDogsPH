@@ -4,94 +4,144 @@ $services = require __DIR__ . '/../../../app/Data/services.php';
 
 ?>
 
-<section id="spa-menu" class="spa-menu">
+<section
+    id="spa-menu"
+    class="spa-menu">
 
-<div class="container">
+    <div class="container">
 
-<div class="text-center mb-5">
+        <div class="text-center mb-5">
 
-<span class="section-tag">
+            <span class="section-tag">
 
-Spa Menu
+                Luxury Grooming Services
 
-</span>
+            </span>
 
-<h2>
+            <h2>
 
-Pamper Your Best Friend
+                Tailored Care For Every Pet
 
-</h2>
+            </h2>
 
-<p>
+            <p class="section-description">
 
-Choose from our premium grooming and wellness services.
+                Every grooming experience is thoughtfully designed to provide comfort, safety, and exceptional care for your beloved companion.
 
-</p>
+            </p>
 
-</div>
+        </div>
 
-<div class="row g-4">
+        <div class="row g-4">
 
-<?php foreach($services as $service): ?>
+            <?php foreach($services as $service): ?>
 
-<div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6">
 
-<div class="spa-card">
+                <div class="spa-card <?= $service['featured'] ? 'featured-service' : ''; ?>">
 
-<div class="spa-icon">
+                    <div class="spa-image">
 
-<i class="<?= $service['icon']; ?>"></i>
+                        <img
+                            src="<?= $imagePath . $service['image']; ?>"
+                            alt="<?= htmlspecialchars($service['title']); ?>">
 
-</div>
+                        <span class="service-badge">
 
-<h3>
+                            <?= htmlspecialchars($service['badge']); ?>
 
-<?= htmlspecialchars($service['title']); ?>
+                        </span>
 
-</h3>
+                    </div>
 
-<div class="price">
+                    <div class="spa-content">
 
-Starting From
+                        <small class="service-subtitle">
 
-<strong>
+                            <?= htmlspecialchars($service['subtitle']); ?>
 
-₱<?= number_format($service['price']); ?>
+                        </small>
 
-</strong>
+                        <h3>
 
-</div>
+                            <?= htmlspecialchars($service['title']); ?>
 
-<div class="duration">
+                        </h3>
 
-<i class="fa-regular fa-clock"></i>
+                        <div class="service-rating">
 
-<?= htmlspecialchars($service['duration']); ?>
+                            ⭐ <?= $service['rating']; ?>
 
-</div>
+                            <span>
 
-<p>
+                                <?= htmlspecialchars($service['reviews']); ?>
 
-<?= htmlspecialchars($service['description']); ?>
+                            </span>
 
-</p>
+                        </div>
 
-<a href="#" class="reserve-btn">
+                        <p>
 
-Reserve Spot
+                            <?= htmlspecialchars($service['description']); ?>
 
-<i class="fa-solid fa-arrow-right"></i>
+                        </p>
 
-</a>
+                        <div class="service-footer">
 
-</div>
+                            <div>
 
-</div>
+                                <small>
 
-<?php endforeach; ?>
+                                    Starting From
 
-</div>
+                                </small>
 
-</div>
+                                <strong>
+
+                                    ₱<?= number_format($service['price']); ?>
+
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <small>
+
+                                    Duration
+
+                                </small>
+
+                                <strong>
+
+                                    <?= htmlspecialchars($service['duration']); ?>
+
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="<?= $bookingUrl; ?>"
+                            class="reserve-btn">
+
+                            <?= htmlspecialchars($service['button']); ?>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <?php endforeach; ?>
+
+        </div>
+
+    </div>
 
 </section>

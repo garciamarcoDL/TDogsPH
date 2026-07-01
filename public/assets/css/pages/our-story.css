@@ -1,0 +1,329 @@
+/* ==========================================
+   OUR STORY HERO
+========================================== */
+
+.our-story-hero{
+
+    padding:180px 0 120px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFF8E7 0%,
+            #F8F4EA 45%,
+            #EDF7FF 100%
+        );
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.our-story-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    right:-250px;
+
+    top:-220px;
+
+    border-radius:50%;
+
+    background:rgba(212,170,89,.08);
+
+    filter:blur(10px);
+
+}
+
+.our-story-hero h1{
+
+    font-size:68px;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+    line-height:1.1;
+
+    margin:30px 0;
+
+}
+
+.our-story-hero-card{
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:40px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.our-story-hero-image{
+
+    width:100%;
+
+    max-width:360px;
+
+    margin:auto;
+
+}
+
+@media(max-width:991px){
+
+    .our-story-hero{
+
+        padding:150px 0 90px;
+
+        text-align:center;
+
+    }
+
+    .our-story-hero h1{
+
+        font-size:48px;
+
+    }
+
+}
+/* ==========================================
+   OUR STORY
+========================================== */
+
+.our-story-section{
+
+    padding:120px 0;
+
+    background:var(--cream);
+
+}
+
+.story-image-card{
+
+    background:#FFFFFF;
+
+    border-radius:40px;
+
+    padding:60px;
+
+    box-shadow:var(--shadow-lg);
+
+    text-align:center;
+
+    height:100%;
+
+}
+
+.story-image{
+
+    width:100%;
+
+    max-width:360px;
+
+    margin:auto;
+
+}
+
+.our-story-section h2{
+
+    font-size:52px;
+
+    margin-bottom:30px;
+
+}
+
+.our-story-section p{
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+}
+
+.our-story-section blockquote{
+
+    margin-top:35px;
+
+    padding-left:24px;
+
+    border-left:5px solid var(--sand);
+
+    font-size:24px;
+
+    font-style:italic;
+
+    color:var(--primary);
+
+    font-family:'Poppins',sans-serif;
+
+}
+/* ==========================================
+   INSPIRATIONS
+========================================== */
+
+.our-inspirations{
+
+    padding:120px 0;
+
+    background:#FFFFFF;
+
+}
+
+.inspiration-card{
+
+    background:var(--cream);
+
+    border-radius:32px;
+
+    padding:45px;
+
+    height:100%;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.inspiration-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.inspiration-icon{
+
+    font-size:56px;
+
+    margin-bottom:24px;
+
+}
+
+.inspiration-card h3{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.inspiration-card h5{
+
+    color:var(--sand);
+
+    margin-bottom:24px;
+
+    font-weight:700;
+
+}
+
+.inspiration-card p{
+
+    line-height:1.9;
+
+}
+/* ==========================================
+   OUR PROMISE
+========================================== */
+
+.our-promise{
+
+    padding:120px 0;
+
+    background:linear-gradient(
+        135deg,
+        #FFF8E7 0%,
+        #F8F4EA 45%,
+        #EDF7FF 100%
+    );
+
+}
+
+.promise-card{
+
+    background:#FFFFFF;
+
+    border-radius:32px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    height:100%;
+
+    transition:.35s ease;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.promise-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.promise-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(212,170,89,.12);
+
+}
+
+.promise-icon i{
+
+    font-size:36px;
+
+    color:var(--sand);
+
+}
+
+.promise-card h4{
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.promise-card p{
+
+    line-height:1.9;
+
+    margin:0;
+
+}

@@ -4,13 +4,53 @@
 
 .cta-section{
 
-    padding:120px 0;
+    position:relative;
 
-    background:var(--primary);
+    overflow:hidden;
+
+    padding:120px 0 180px;
+
+    background:
+    linear-gradient(
+    270deg,
+    #FFE9B5 0%,
+    #F8F3E5 45%,
+    #EAF5FF 100%
+    );
+
+}
+
+/* Soft luxury overlay */
+
+.cta-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(255,255,255,.18),
+        transparent 45%
+    ),
+    radial-gradient(
+        circle at bottom left,
+        rgba(81,50,41,.06),
+        transparent 40%
+    );
+
+    pointer-events:none;
 
 }
 
 .cta-wrapper{
+
+    position:relative;
+
+    z-index:2;
 
     max-width:1000px;
 
@@ -20,15 +60,15 @@
 
 .cta-section .section-tag{
 
-    background:var(--sand);
+    background:var(--primary);
 
-    color:var(--primary);
+    color:var(--cream);
 
 }
 
 .cta-section h2{
 
-    color:var(--white);
+    color:var(--primary);
 
     font-size:56px;
 
@@ -40,11 +80,13 @@
 
 .cta-section .section-description{
 
-    color:rgba(255,255,255,.85);
+    color:var(--text-secondary);
 
     max-width:700px;
 
     margin:0 auto;
+
+    line-height:1.8;
 
 }
 
@@ -58,8 +100,18 @@
 
     min-width:220px;
 
-    background:var(--white);
+    background:var(--primary);
 
-    color:var(--primary);
+    color:var(--white);
+
+    transition:all .35s ease;
+
+}
+
+.cta-section .btn-primary-custom:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
 
 }

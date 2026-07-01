@@ -1,31 +1,45 @@
 :root{
 
-/* CLIENT BRAND */
+    /* ==========================================
+       CLIENT BRAND
+    ========================================== */
 
---primary:#513229;
---cream:#F4F1E2;
---sky:#D8EBF9;
---sand:#FCE6B7;
---sage:#D7D4B1;
---yellow: #fcf2b7
---light-yellow: #f5fcb7
-/* UI */
+    --primary:#513229;
+    --cream:#F4F1E2;
+    --sky:#D8EBF9;
+    --sand:#FCE6B7;
+    --sage:#D7D4B1;
 
---secondary:var(--sand);
---accent:var(--sky);
+    --yellow:#FCF2B7;
+    --light-yellow:#F5FCB7;
 
---background:var(--cream);
---surface:#FFFFFF;
+    /* ==========================================
+       UI COLORS
+    ========================================== */
 
---text-primary:var(--primary);
---text-secondary:#6E625D;
+    --secondary:var(--sand);
+    --accent:var(--sky);
 
---white:#FFFFFF;
+    --background:var(--cream);
+    --surface:#FFFFFF;
 
---shadow-sm:0 5px 15px rgba(0,0,0,.05);
---shadow-md:0 12px 30px rgba(0,0,0,.08);
---shadow-lg:0 25px 60px rgba(0,0,0,.12);
+    --text-primary:var(--primary);
+    --text-secondary:#6E625D;
 
---radius:24px;
+    --white:#FFFFFF;
+
+    /* ==========================================
+       SHADOWS
+    ========================================== */
+
+    --shadow-sm:0 5px 15px rgba(0,0,0,.05);
+    --shadow-md:0 12px 30px rgba(0,0,0,.08);
+    --shadow-lg:0 25px 60px rgba(0,0,0,.12);
+
+    /* ==========================================
+       RADIUS
+    ========================================== */
+
+    --radius:24px;
 
 }
