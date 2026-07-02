@@ -115,3 +115,92 @@
     box-shadow:0 18px 40px rgba(0,0,0,.18);
 
 }
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1200px){
+
+    .cta-section h2{
+
+        font-size:48px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .cta-section{
+
+        padding:90px 0 120px;
+
+        text-align:center;
+
+    }
+
+    .cta-section h2{
+
+        font-size:42px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .cta-section{
+
+        padding:80px 0 100px;
+
+    }
+
+    .cta-section h2{
+
+        font-size:36px;
+
+    }
+
+    .cta-section .section-description{
+
+        font-size:16px;
+
+    }
+
+    .cta-section .btn-primary-custom{
+
+        min-width:200px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .cta-section{
+
+        padding:70px 0 80px;
+
+    }
+
+    .cta-section h2{
+
+        font-size:30px;
+
+    }
+
+    .cta-section .section-description{
+
+        font-size:15px;
+
+    }
+
+    .cta-section .btn-primary-custom{
+
+        width:100%;
+
+        min-width:unset;
+
+    }
+
+}
