@@ -825,3 +825,136 @@
     }
 
 }
+/* ==========================================
+   BOOKING RESPONSIVE
+========================================== */
+
+@media (max-width:992px){
+
+    .time-slots{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .arrival-card{
+
+        margin-bottom:20px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .time-slots{
+
+        grid-template-columns:1fr;
+
+        gap:14px;
+
+    }
+
+    .time-slot{
+
+        height:78px;
+
+    }
+
+    .time-slot-text{
+
+        font-size:18px;
+
+    }
+
+    .arrival-card{
+
+        padding:25px;
+
+    }
+
+    .arrival-icon{
+
+        width:64px;
+
+        height:64px;
+
+        font-size:28px;
+
+    }
+
+    .pickup-section{
+
+        padding:25px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .booking-hero h1{
+
+        font-size:36px;
+
+    }
+
+    .hero-description{
+
+        font-size:16px;
+
+    }
+
+    .booking-highlights{
+
+        gap:10px;
+
+    }
+
+    .highlight{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .service-card{
+
+        padding:25px;
+
+        min-height:auto;
+
+    }
+
+    .service-card h4{
+
+        font-size:28px;
+
+    }
+
+    .service-price{
+
+        font-size:22px;
+
+    }
+
+    .time-slot{
+
+        height:70px;
+
+    }
+
+    .time-slot-text{
+
+        font-size:16px;
+
+    }
+
+    .pickup-section{
+
+        padding:20px;
+
+    }
+
+}
