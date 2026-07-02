@@ -25,7 +25,6 @@
                 <p class="section-description">
 
                     Select your preferred appointment date and available time.
-
                     We are open Monday through Sunday from 8:00 AM to 8:00 PM.
 
                 </p>
@@ -101,7 +100,13 @@
                             class="time-slot"
                             data-time="<?= $time; ?>">
 
-                            <?= $time; ?>
+                            <span class="time-slot-bg"></span>
+
+                            <span class="time-slot-text">
+
+                                <?= $time; ?>
+
+                            </span>
 
                         </button>
 
@@ -207,9 +212,7 @@
 
             </div>
 
-            <!-- ==========================================
-                 PICKUP INFORMATION
-            ========================================== -->
+            <!-- PICKUP INFORMATION -->
 
             <div
                 id="pickup-information"
